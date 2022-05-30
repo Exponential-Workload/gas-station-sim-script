@@ -1,0 +1,16 @@
+{
+  "name": "gas-station",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "luaccbundle src src/index.lua output.lua"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "luaccbundle": "^1.0.0"
+  }
+}
