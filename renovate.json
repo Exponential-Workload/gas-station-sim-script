@@ -1,5 +1,3 @@
 {
-  "extends": [
-    "config:base"
-  ]
+  "extends": ["config:base", "github>MokiyCodes/MokiyCodes//cfg/renovate"]
 }
