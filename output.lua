@@ -255,7 +255,9 @@ local dark_theme = {
   TextBox_Underline_Color = Color3.fromRGB(255, 92, 92);
 }
 
-if game:GetService('CoreGui'):FindFirstChild('uiui') then game:GetService('CoreGui'):FindFirstChild('uiui'):Destroy() end
+if game:GetService('CoreGui'):FindFirstChild('gasgasgasimgonnasteponthegasui') then
+  game:GetService('CoreGui'):FindFirstChild('gasgasgasimgonnasteponthegasui'):Destroy()
+end
 
 local library = {}
 local uiui = Instance.new('ScreenGui')
@@ -265,7 +267,7 @@ local UIPadding = Instance.new('UIPadding')
 
 local TweenService = game:GetService('TweenService')
 
-uiui.Name = 'uiui'
+uiui.Name = 'gasgasgasimgonnasteponthegasui'
 uiui.Parent = game:GetService('CoreGui')
 uiui.DisplayOrder = 1
 
@@ -910,7 +912,10 @@ if fireproximityprompt then
               task.wait(1.25)
               if Refuel.Enabled then
                 fireproximityprompt(Refuel)
-                DidAction = true;
+                if Refuel.Name ~= 'FinishFuel' then
+                  DidAction = true;
+                  task.wait(2)
+                end
                 break
               end
             end
@@ -932,7 +937,7 @@ if fireproximityprompt then
       if DidAction then
         task.wait(EvLoopTimer)
       else
-        task.wait(1)
+        task.wait(1 / 15)
       end
     end
   end)

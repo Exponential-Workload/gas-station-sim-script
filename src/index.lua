@@ -36,7 +36,10 @@ if fireproximityprompt then
               task.wait(1.25)
               if Refuel.Enabled then
                 fireproximityprompt(Refuel)
-                DidAction = true;
+                if Refuel.Name ~= 'FinishFuel' then
+                  DidAction = true;
+                  task.wait(2)
+                end
                 break
               end
             end
@@ -58,7 +61,7 @@ if fireproximityprompt then
       if DidAction then
         task.wait(EvLoopTimer)
       else
-        task.wait(1)
+        task.wait(1 / 15)
       end
     end
   end)

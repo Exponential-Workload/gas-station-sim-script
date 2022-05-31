@@ -62,7 +62,9 @@ local dark_theme = {
   TextBox_Underline_Color = Color3.fromRGB(255, 92, 92);
 }
 
-if game:GetService('CoreGui'):FindFirstChild('uiui') then game:GetService('CoreGui'):FindFirstChild('uiui'):Destroy() end
+if game:GetService('CoreGui'):FindFirstChild('gasgasgasimgonnasteponthegasui') then
+  game:GetService('CoreGui'):FindFirstChild('gasgasgasimgonnasteponthegasui'):Destroy()
+end
 
 local library = {}
 local uiui = Instance.new('ScreenGui')
@@ -72,7 +74,7 @@ local UIPadding = Instance.new('UIPadding')
 
 local TweenService = game:GetService('TweenService')
 
-uiui.Name = 'uiui'
+uiui.Name = 'gasgasgasimgonnasteponthegasui'
 uiui.Parent = game:GetService('CoreGui')
 uiui.DisplayOrder = 1
 
