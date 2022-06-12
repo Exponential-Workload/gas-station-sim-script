@@ -1,3 +1,5 @@
+**WARNING** The game now bans users and requires them to pay 100 robux to get unbanned. **USE THIS SCRIPT ON AN ALT**
+
 # Gas Station Simulator script
 
 a small [gas station simulator](https://www.roblox.com/games/9359839118/Gas-Station-Simulator) script since im tired of re-writing the same mess every 25 seconds
